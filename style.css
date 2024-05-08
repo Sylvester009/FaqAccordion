@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Lightpink: hsl(275, 100%, 97%);
+  --Grayishpurple: hsl(292, 16%, 49%);
+  --Darkpurple: hsl(292, 42%, 14%);
+}
+
+* {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  text-align: left;
+  display: flex;
+  background: url("assets/images/background-pattern-mobile.svg");
+  background-color: var(--Lightpink);
+  background-repeat: no-repeat;
+  padding: 10%;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.main {
+  margin: 30% auto;
+  background-color: var(--White);
+  border-radius: 10px;
+  max-width: 450px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 20px 20px;
+}
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.faq-division {
+  padding: 10px 20px 20px;
+}
+
+.sub-title-division {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--Darkpurple);
+  max-width: 240px;
+}
+
+.text {
+  display: none;
+}
+
+.text-active {
+  color: var(--Grayishpurple);
+  display: inline-block;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: url("assets/images/background-pattern-desktop.svg");
+    background-color: var(--Lightpink);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+  }
+
+  .main {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .sub-title {
+    max-width: 100%;
+  }
+}
